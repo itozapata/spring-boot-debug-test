@@ -1,0 +1,21 @@
+{
+  "Env": [
+      "JAVA_OPT_DEV=-agentlib:jdwp=transport=dt_socket,address=18080,suspend=n,server=y"
+    ],
+  "HostConfig": {
+    "PortBindings": {
+      "18080/tcp": [
+        {
+          "HostIp": "0.0.0.0",
+          "HostPort": "18080"
+        }
+      ],
+      "8080/tcp": [
+        {
+          "HostIp": "0.0.0.0",
+          "HostPort": ""
+        }
+      ]
+    }
+  }
+}
